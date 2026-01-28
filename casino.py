@@ -86,6 +86,13 @@ def main():
                     update_balance(currect_user, new_balance)
 
                 print("your lucky numbers was : ", randomnumber)
+                
+                # Update system state
+                current_balance = new_balance
+                history.append(new_balance)
+                if current_balance <= 0:
+                    print("YOU ARE BROKE! GAME OVER!")
+                    break
 
             elif fav_Game == 2:
 
@@ -114,6 +121,13 @@ def main():
                     balance = get_balance(currect_user)
                     new_balance = balance - 1000
                     update_balance(currect_user, new_balance)
+                
+                # Update system state
+                current_balance = new_balance
+                history.append(new_balance)
+                if current_balance <= 0:
+                    print("YOU ARE BROKE! GAME OVER!")
+                    break
         
 
             elif fav_Game == 3:
