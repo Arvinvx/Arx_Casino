@@ -9,6 +9,7 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝     ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
 ```
 
+### 🛠️ Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
 ![Numpy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
@@ -16,40 +17,11 @@
 
 ---
 
-###  ABOUT THE PROJECT
-
-**ARX Casino** is a CLI-based gambling simulation engine built with Python. It features a persistent economy system where user data is stored and retrieved from a local dataset. The application integrates data visualization to track session performance, providing users with a visual representation of their financial trajectory upon exit.
-
----
-
-###  CORE FEATURES
-
-![User Auth](https://img.shields.io/badge/Authentication-CSV_Database-black?style=flat-square)
-> Secure login system validating credentials against a local encrypted-style registry.
-
-![Economy](https://img.shields.io/badge/Economy-Persistent-green?style=flat-square)
-> Real-time balance updates saved instantly to `users.csv`. Bankruptcy protection and betting validation included.
-
-![Analytics](https://img.shields.io/badge/Analytics-Matplotlib_Graphs-orange?style=flat-square)
-> Automated session graphing. Visualizes your win/loss history with a line graph immediately after the session ends.
-
----
-
-###  GAME MODES
-
-| GAME | RISK LEVEL | PAYOUT | MECHANIC |
-|------|-----------|--------|----------|
-| **Lucky Number** | High | **5x** | Random number generation comparison against user input. |
-| **Slot Machine** | Medium | **10x - 20x** | Three-reel symbol matching logic. |
-| **Roulette** | Variable | **2x - 14x** | Probability-based color prediction (Red/Black/Green). |
-
----
-
-###  INSTALLATION
+### 📥 How to Clone & Install
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/sigma-casino.git
+   git clone https://github.com/arvinvx/arx-casino.git
    ```
 
 2. **Install Dependencies**
@@ -57,23 +29,18 @@
    pip install numpy pandas matplotlib
    ```
 
-3. **Run the Simulation**
+---
+
+### 🎮 How It Works
+
+1. **Run the game**:
    ```bash
    python casino.py
    ```
+   *(Or just double-click `start_arx.bat` on Windows!)*
 
----
+2. **Login**: Use a username from `users.csv` (e.g., `arvin` / `arvin.123`).
 
-###  DATA STRUCTURE (`users.csv`)
+3. **Play**: your money is saved automatically to the CSV file. If you run out of money, the game ends.
 
-The system relies on a strictly formatted CSV file for persistence:
-
-```csv
-username,password,moeny
-admin,admin.123,50000
-player1,pass123,1000
-```
-
----
-
-![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
+4. **Graph**: When you exit, a graph pops up showing your wins and losses for that session.
